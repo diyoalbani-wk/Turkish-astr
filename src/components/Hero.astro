@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import home from '../assets/home.png';
+---
+
+<main class="relative min-h-[150vh] bg-white"> 
+    
+    <header class="fixed md:absolute top-0 left-0 w-full z-50 flex items-center justify-between md:justify-end px-6 md:px-12 py-8 transition-all bg-white/20 backdrop-blur-md md:bg-transparent md:backdrop-blur-none">
+        
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <label for="menu-toggle" class="md:hidden flex flex-col gap-1.5 cursor-pointer z-[60]">
+            <span class="w-8 h-0.5 bg-black transition-all peer-checked:rotate-45 peer-checked:translate-y-2"></span>
+            <span class="w-8 h-0.5 bg-black transition-all peer-checked:opacity-0"></span>
+            <span class="w-8 h-0.5 bg-black transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2"></span>
+        </label>
+
+        <nav class="fixed inset-0  bg-white/40 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-lg font-semibold text-gray-800 transition-transform duration-300 -translate-x-full peer-checked:translate-x-0 md:top-8 md:left-2/5 lg:left-1/2 md:-translate-x-1/2 md:inset-auto md:flex-row md:bg-white/10 md:backdrop-blur-md md:px-10 md:py-3 md:ml-2 md:rounded-full md:text-sm md:gap-8 z-50 whitespace-nowrap">
+            <a href="#" class="hover:text-red-500 transition">Çözüm ve Hizmetler</a>
+            <a href="#" class="hover:text-red-500 transition">Ürünler</a>
+            <a href="#" class="hover:text-red-500 transition">Teknolojiler</a>
+            <a href="#" class="hover:text-red-500 transition">İnsan Kaynakları</a>
+            <a href="#" class="hover:text-red-500 transition">Kurumsal</a>
+        </nav>
+
+        <a href="#" class="bg-[#f84652] text-white px-5 md:px-8 py-3 rounded-lg font-bold text-[11px] md:text-sm uppercase tracking-wider shadow-lg hover:bg-red-600 transition z-10">
+            İletişim
+        </a>
+    </header>
+
+    <div class="absolute top-0 left-0 w-full h-screen z-0">
+        <Image src={home} alt="Hero Background" class="w-full h-full  object-right" />
+        <div class="md:hidden absolute inset-0 bg-gradient-to-b from-white via-white/80 to-transparent h-3/4"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10 pt-[25vh]">
+        <div class="max-w-2xl text-center md:text-left">
+            <h1 class="text-[34px] md:text-6xl font-extrabold text-gray-900 mb-8 leading-tight">
+                Bilgi Teknolojilerinde <br class="hidden md:block" />
+                23 Yıllık Tecrübe
+            </h1>
+        </div>
+    </div>
+</main>

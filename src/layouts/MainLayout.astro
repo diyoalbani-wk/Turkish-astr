@@ -1,0 +1,19 @@
+---
+    import '../styles/global.css';
+    import { Image } from 'astro:assets';
+    import favicon from '../assets/lensa.png';
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href={favicon.src} type="image/png">
+        <title>Test-web</title>
+    </head>
+    <body>
+
+        <slot />
+
+    </body>
+</html>
