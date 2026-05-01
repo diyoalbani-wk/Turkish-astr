@@ -4,13 +4,17 @@
     import image2 from '../assets/2.png';
 ---
 
-<section class="max-w-6xl mx-auto px-6">
+<section class="max-w-6xl mx-auto px-6 overflow-hidden"> <!-- Tambah overflow-hidden di sini -->
     <div class="grid grid-cols-1 md:grid-cols-2 py-12 md:py-24 items-center gap-12 md:gap-20">
-        <div class="md:order-2" data-aos="fade-left" data-aos-duration="1000">
-            <Image src={image1} alt="Kalite ve Süreç" class="w-full rounded-2xl shadow-sm" />
+        <div class="md:order-2">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <Image src={image1} alt="..." class="w-full rounded-2xl shadow-sm" />
+            </div>
         </div>
-        <div class="md:order-1 text-left" data-aos="fade-right" data-aos-duration="1000">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+
+        <div class="md:order-1 text-left">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Kalite ve Süreç Yönetimi
             </h2>
             <p class="text-gray-500 text-sm md:text-base mb-10 leading-relaxed max-w-lg">
@@ -19,15 +23,19 @@
             <a href="#" data-aos="fade-up" class="inline-block bg-[#f84652] text-white px-8 py-3.5 rounded-lg font-bold text-xs uppercase tracking-widest shadow-lg hover:bg-red-600 transition-all active:scale-95">
                 Keşfet
             </a>
+            </div>
         </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 py-12 md:py-24 items-center gap-12 md:gap-20">
-        <div data-aos="fade-right" data-aos-duration="1000">
-            <Image src={image2} alt="Test Yönetimi" class="w-full rounded-2xl shadow-sm" />
+        <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <Image src={image2} alt="..." class="w-full rounded-2xl shadow-sm" />
+            </div>
         </div>
-        <div class="text-left" data-aos="fade-left" data-aos-duration="1000">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <div class="text-left">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Test Yönetimi ve Analizi
             </h2>
             <p class="text-gray-500 text-sm md:text-base mb-10 leading-relaxed max-w-lg">
@@ -36,6 +44,7 @@
             <a href="#" data-aos="fade-up" class="inline-block bg-[#f84652] text-white px-8 py-3.5 rounded-lg font-bold text-xs uppercase tracking-widest shadow-lg hover:bg-red-600 transition-all active:scale-95">
                 Keşfet
             </a>
+            </div>
         </div>
     </div>
 </section>
